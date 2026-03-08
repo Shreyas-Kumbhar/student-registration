@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/style1.css}">
+    <title>Registration Success</title>
+</head>
+<body>
+<div class="success-container">
+<h2>Registration Successful!</h2>
+
+<p><b>Name:</b> <span th:text="${student.name}"></span></p>
+<p><b>Email:</b> <span th:text="${student.email}"></span></p>
+<p><b>Course:</b> <span th:text="${student.course}"></span></p>
+<p><b>Age:</b> <span th:text="${student.age}"></span></p>
+
+<a th:href="@{/register}">Register Another Student</a>
+</div>
+</body>
+</html>
